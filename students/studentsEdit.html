@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="students.css" />
+    <title>Students' Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Students' Form</h1>
+    </header>
+    <form>
+        <main>
+            <fieldset>
+                <legend>Student's Personal Details</legend>
+                <div>
+                    <p>
+                        <label for="firstname">First Name</label>
+                        <br>
+                        <input type="text" id="firstname" maxlength="20" value="Menia">
+                        <br>
+                    </p>
+                    <p>
+                        <label for="lastname">Last Name</label>
+                        <br>
+                        <input type="text" id="lastname" maxlength="40" value="Mentani">
+                        <br>
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Student's Date of Birth</legend>
+                <div>
+                    <p>
+                        <label for="dob">Date of Birth</label>
+                        <br>
+                        <input type="date" min="1980-01-01" max="2011-12-31" id="dob" value="1986-12-03">
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Student's Tuition Fees</legend>
+                <div>
+                    <p>
+                        <label for="fees">Tuitions Fees</label>
+                        <input type="number" id="fees" min="1000" max="2000" maxlength="5" value="1500">
+                    </p>
+                </div>
+            </fieldset>
+        </main>
+        <footer>
+            <p>
+                <input type="submit" value="Edit a Student">
+            </p>
+        </footer>
+    </form>
+</body>
+
+</html>

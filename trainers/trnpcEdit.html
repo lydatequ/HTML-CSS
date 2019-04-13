@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="trainers.css"/>
+    <title>Trainers per Course Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Trainers per Course Form</h1>
+    </header>
+    <form>
+        <main>
+            <fieldset>
+                <legend>List of Trainers</legend>
+                <p>
+                    <label for="myTrain">Choose a Trainer from the list</label>
+                    <input type="text" id="myTrain" name="myTrain" list="mySuggest" value="Sophia Tolle">
+                    <datalist id="mySuggest">
+                        <option>Herve Tunga</option>
+                        <option>Alessia Cara</option>
+                        <option>Mirna Smidt</option>
+                        <option>Milda Latakaite</option>
+                        <option>Samir Asghar</option>
+                        <option>Sasha Vaniev</option>
+                        <option>Tanya Boychuk</option>
+                        <option>Tamas Lakner</option>
+                        <option>Sophia Tolle</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>List of Courses</legend>
+                <p>
+                    <label for="myCourse">Choose a course from the list</label>
+                    <input type="text" name="myCourse" id="myCourse" list="mySuggestion" value="CSharp 1">
+                    <datalist id="mySuggestion">
+                        <option>Java 1</option>
+                        <option>Java 2</option>
+                        <option>CSharp 1</option>
+                        <option>CSharp 2</option>
+                        <option>SQL 1</option>
+                        <option>SQL 2</option>
+                        <option>Python</option>
+                    </datalist>
+                </p>
+            </fieldset>
+        </main>
+        <footer>
+            <p>
+                <input type="submit" value="Edit Trainers per Course">
+            </p>
+        </footer>
+    </form>
+</body>
+
+</html>

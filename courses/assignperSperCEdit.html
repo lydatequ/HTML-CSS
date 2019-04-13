@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="cstyle.css" />
+    <title>Assignments per Students per Course Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Assignments per Students per Course Form</h1>
+    </header>
+    <form>
+        <main>
+            <fieldset>
+                <legend>List of Assignments</legend>
+                <p>
+                    <label for="myAssig">Edit an assignment from the list</label>
+                    <input type="text" id="myAssig" name="myAssig" list="mySuggest" value="Assignment 3" required>
+                    <datalist id="mySuggest">
+                        <option>Assignment 1</option>
+                        <option>Assignment 2</option>
+                        <option>Assignment 3</option>
+                        <option>Assignment 4</option>
+                        <option>Assignment 5</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>List of Students</legend>
+                <p>
+                    <label for="myStud">Choose a Student from the list</label>
+                    <input type="text" id="myStud" name="myStud" list="mySuggest" value="Klelia Menelaou">
+                    <datalist id="mySuggest1">
+                        <option>Michalis Parisis</option>
+                        <option>Aggelos Emmanouil</option>
+                        <option>Marina Michail</option>
+                        <option>Maria Mpenaki</option>
+                        <option>Klelia Menelaou</option>
+                        <option>Giorgio Andreotti</option>
+                        <option>Giannis Minas</option>
+                        <option>Giorgos Michail</option>
+                        <option>Menia Mantani</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>List of Courses</legend>
+                <p>
+                    <label for="myCourse">Edit a course from the list</label>
+                    <input type="text" name="myCourse" id="myCourse" list="mySuggestion" value="Java 2" required>
+                    <datalist id="mySuggestion">
+                        <option>Java 1</option>
+                        <option>Java 2</option>
+                        <option>CSharp 1</option>
+                        <option>CSharp 2</option>
+                        <option>SQL 1</option>
+                        <option>SQL 2</option>
+                        <option>Python</option>
+                    </datalist>
+                </p>
+            </fieldset>
+        </main>
+        <footer>
+            <p>
+                <input type="submit" value="Edit Assignments per Student per Course">
+            </p>
+        </footer>
+    </form>
+</body>
+
+</html>

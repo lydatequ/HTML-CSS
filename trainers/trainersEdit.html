@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="trainers.css" />
+    <title>Trainers' Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Trainers'Form</h1>
+    </header>
+    <form>
+        <main>
+            <fieldset>
+                <legend>Trainer's Personal details</legend>
+                <p>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" id="firstname" maxlength="20" value="Herve" required>
+                    <br>
+                </p>
+                <p>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input type="text" id="lastname" maxlength="40" value="Tunga" required>
+                    <br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Which subject do you teach?</legend>
+                <p>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" list="mySuggestion" value="C++">
+                    <datalist id="mySuggestion">
+                        <option>Java</option>
+                        <option>SQL</option>
+                        <option>CSharp</option>
+                        <option>C++</option>
+                        <option>Python</option>
+                        <option selected>PHP</option>
+                        <option>Agile design</option>
+                        <option>Scrum</option>
+                        <option>Lean thinking</option>
+                        <option>Other</option>
+                    </datalist>
+                </p>
+            </fieldset>
+        </main>
+        <footer>
+            <p>
+                <input type="submit" value="Edit a Trainer">
+            </p>
+        </footer>
+    </form>
+</body>
+
+</html>

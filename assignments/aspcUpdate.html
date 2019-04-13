@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel= "stylesheet" type = "text/css" media = "screen" href = "assignm.css"/>
+    <title>Assignments per Course Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Assignments per Course Form</h1>
+    </header>
+    <form>
+        <main>
+            <fieldset>
+                <legend>List of Assignments</legend>
+                <p>
+                    <label for="myAssig">Update assignment(s) from the list</label>
+                    <input type="text" id="myAssig" name="myAssig" list="mySuggest" required>
+                    <datalist id="mySuggest">
+                        <option>Assignment 1</option>
+                        <option>Assignment 2</option>
+                        <option>Assignment 3</option>
+                        <option>Assignment 4</option>
+                        <option>Assignment 5</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>List of Courses</legend>
+                <p>
+                    <label for="myCourse">Update a course from the list</label>
+                    <input type="text" name="myCourse" id="myCourse" list="mySuggestion" required>
+                    <datalist id="mySuggestion">
+                        <option>Java 1</option>
+                        <option>Java 2</option>
+                        <option>CSharp 1</option>
+                        <option>CSharp 2</option>
+                        <option>SQL 1</option>
+                        <option>SQL 2</option>
+                        <option>Python</option>
+                    </datalist>
+                </p>
+            </fieldset>
+        </main>
+        <footer>
+            <p>
+                <input type="submit" value="Update Assignments per Course"/>
+            </p>
+        </footer>
+    </form>
+</body>
+
+</html>
